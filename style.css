@@ -108,16 +108,30 @@
 .ex-11-icon {
     font-size: 60px;
     
-}
-.ex-11-icon:hover{
-    transform: rotate(260deg);
-    transition: 2s;
     
 }
-.ex-11-icon:after:hover{
-    transform: rotate(0deg);
-    transition: 1s;
+.ex-11-icon:hover{
+    animation-name: turn;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    transition: 2s;
+    
+    
 }
+@keyframes turn{
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    70%{
+        transform: rotate(260deg);
+        
+    }
+    100%{
+        transform: rotate(-60deg);
+    }
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
