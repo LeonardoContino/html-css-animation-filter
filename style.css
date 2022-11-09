@@ -145,6 +145,24 @@
     text-align: center;
     text-decoration: none;
 }
+.ex-12-button:hover{
+    animation: turn;
+    animation-duration: 3s linear;
+    
+}
+@keyframes turn{
+    0%{
+        right: 20%;
+    }
+    
+    50%{
+        right: calc(100% - 60px);
+        
+    }
+    100%{
+        right: 15%;
+    }
+}
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
     top: -10px;
